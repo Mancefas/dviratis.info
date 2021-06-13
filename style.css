@@ -1,5 +1,6 @@
 :root {
-  --teksto-spalva: #fff;
+  --teksto-spalva: rgb(255, 255, 255);
+  --mygtuku: #ffdf61cb;
   --pagr: #225a6aad;
 }
 
@@ -156,6 +157,15 @@ header img {
   justify-content: center;
 }
 
+.ugis {
+  background-color: rgba(245, 245, 245, 0.541);
+  border: none;
+  padding: 0.2rem;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
 .straipsniai-mgtk button {
   text-decoration: none;
   border: none;
@@ -164,6 +174,35 @@ header img {
   padding: 0.7rem;
   margin: 0.5rem;
   border-radius: 7px;
+  cursor: pointer;
+}
+
+.dydzio-skaiciavimas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  padding: 0.5rem;
+  border-radius: 5px;
+  width: 35vw;
+}
+
+.ugio-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dydzio-skaiciavimas button {
+  padding: 0.2rem;
+  background-color: var(--mygtuku);
+  color: var(--teksto-spalva);
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+}
+.dydzio-skaiciavimas button:hover {
+  transform: scale(1.05);
 }
 /*Plento straipsniai*/
 
@@ -280,6 +319,8 @@ i {
   height: auto;
   width: 60%;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 2rem;
   line-height: 1.5;
   border-radius: 7px;
