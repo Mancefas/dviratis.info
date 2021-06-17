@@ -396,6 +396,12 @@ img {
   cursor: pointer;
 }
 
+/*Slapuku politika*/
+.slapuku-politika {
+  height: fit-content;
+  width: 65vw;
+}
+
 /*Footer*/
 footer {
   align-content: center;

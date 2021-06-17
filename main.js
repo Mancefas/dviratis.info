@@ -1,3 +1,5 @@
+'use strict';
+
 const mygtukas = document.querySelectorAll(".straipsniai-mgtk")
 
 
