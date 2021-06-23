@@ -17,6 +17,15 @@
   display: grid;
 }
 
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
 /*Body*/
 
 body {
@@ -142,7 +151,7 @@ header img {
 .straipsniai {
   height: 100vh;
   width: auto;
-  padding-top: 8vh;
+
   margin: 2%;
 }
 
@@ -175,6 +184,7 @@ header img {
   margin: 0.5rem;
   border-radius: 7px;
   cursor: pointer;
+  font-size: large;
 }
 
 .dydzio-skaiciavimas {
@@ -204,12 +214,21 @@ header img {
 .dydzio-skaiciavimas button:hover {
   transform: scale(1.05);
 }
+
+.straipsniai-su-img {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 /*Plento straipsniai*/
 
 #plento2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 80%;
+  grid-gap: 5%;
+  height: 60%;
   width: 100%;
 }
 
@@ -228,6 +247,19 @@ header img {
 
 #sedyne {
   background-image: url(/img/Dviračio_sėdynė.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40vh;
+  width: 35vw;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#pedalai {
+  background-image: url(/img/plento_pedalas.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 40vh;
@@ -331,6 +363,17 @@ i {
     rgba(139, 169, 177, 0.1) 13%,
     rgba(34, 90, 106, 0.2) 90%
   );
+}
+
+.straipsnis-container img {
+  border-radius: 7px;
+  height: 8rem;
+  width: auto;
+  margin: 2rem;
+}
+
+.straipsnis-container a {
+  text-decoration: none;
 }
 
 .remo-dydis img {
@@ -483,5 +526,9 @@ footer {
     background-size: contain;
     height: 40vh;
     width: auto;
+  }
+
+  .straipsniai-su-img {
+    flex-direction: column;
   }
 }
