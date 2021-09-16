@@ -532,3 +532,40 @@ footer {
     flex-direction: column;
   }
 }
+
+/* Norima spalvu schema */
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: rgb(25, 31, 32);
+    background: linear-gradient(
+      186deg,
+      rgba(20, 24, 26, 0.5) 13%,
+      rgba(4, 11, 14, 0.8) 90%
+    );
+  }
+
+  #mail {
+    background-color: #756627;
+  }
+
+  .breadcrums ul {
+    background-color: rgba(167, 167, 167, 0.911);
+  }
+
+  .breadcrums a,
+  .breadcrums p {
+    color: var(--teksto-spalva);
+  }
+}
+
+/* @media (prefers-color-scheme: light) {
+  body {
+    background: rgb(139, 169, 177);
+    background: linear-gradient(
+      186deg,
+      rgba(139, 169, 177, 0.3) 13%,
+      rgba(34, 90, 106, 0.5) 90%
+    );
+  }
+} */
